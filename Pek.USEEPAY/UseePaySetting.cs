@@ -1,4 +1,12 @@
-﻿namespace Pek.UseePay;
+﻿using System.ComponentModel;
 
-public class UseePaySetting {
+using NewLife.Configuration;
+
+namespace Pek.UseePay;
+
+/// <summary>UseePay支付设置</summary>
+[DisplayName("UseePay支付设置")]
+[Config("UseePay")]
+public class UseePaySetting : Config<UseePaySetting>
+{
 }
