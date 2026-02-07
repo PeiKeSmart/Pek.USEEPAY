@@ -8,5 +8,10 @@
     <File Path="NuGet.config" />
     <File Path="Readme.MD" />
   </Folder>
+  <Folder Name="/Doc/">
+    <File Path="Doc/配置说明.md" />
+    <File Path="Doc/测试项目指南.md" />
+  </Folder>
   <Project Path="Pek.USEEPAY/Pek.USEEPAY.csproj" />
+  <Project Path="Pek.USEEPAY.Samples/Pek.USEEPAY.Samples.csproj" />
 </Solution>

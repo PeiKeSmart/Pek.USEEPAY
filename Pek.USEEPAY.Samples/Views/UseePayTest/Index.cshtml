@@ -1,0 +1,88 @@
+@{
+    ViewBag.Title = "UseePay 支付测试";
+    Layout = "_Root";
+}
+
+<div style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+    <h1>UseePay 支付测试</h1>
+
+    <div style="background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 5px;">
+        <h2>配置信息</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>是否启用：</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">
+                    <span style="color: @(ViewBag.IsEnable ? "green" : "red")">
+                        @(ViewBag.IsEnable ? "已启用" : "未启用")
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>当前环境：</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">
+                    <span style="color: @(ViewBag.UseSandbox ? "blue" : "green")">
+                        @(ViewBag.UseSandbox ? "Sandbox 沙箱环境" : "Prod 生产环境")
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>API 网关：</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">@ViewBag.ApiUrl</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>商户号：</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">@(String.IsNullOrEmpty(ViewBag.MerchantId) ? "未配置" : ViewBag.MerchantId)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;"><strong>AppId：</strong></td>
+                <td style="padding: 10px; border-bottom: 1px solid #ddd;">@(String.IsNullOrEmpty(ViewBag.AppId) ? "未配置" : ViewBag.AppId)</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;"><strong>签名类型：</strong></td>
+                <td style="padding: 10px;">@ViewBag.SignType</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="margin: 20px 0;">
+        <h2>功能测试</h2>
+        <div style="padding: 20px;">
+            <button onclick="createOrder()" style="padding: 10px 30px; background: #409EFF; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">
+                创建支付订单
+            </button>
+            <button onclick="location.href='/UseePayTest/Return'" style="padding: 10px 30px; background: #67C23A; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                模拟支付返回
+            </button>
+        </div>
+
+        <div id="result" style="margin-top: 20px; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 5px; display: none;">
+            <h3>测试结果：</h3>
+            <pre id="resultContent" style="background: #f9f9f9; padding: 10px; border-radius: 3px; overflow: auto;"></pre>
+        </div>
+    </div>
+
+    <div style="background: #fff3cd; padding: 15px; margin: 20px 0; border-radius: 5px; border-left: 4px solid #ffc107;">
+        <h3 style="margin-top: 0;">配置说明：</h3>
+        <p>1. 配置文件位于应用程序根目录的 <code>UseePay.config</code></p>
+        <p>2. 首次运行时会自动生成默认配置文件，请修改其中的参数值</p>
+        <p>3. 沙箱环境用于测试，生产环境用于正式交易</p>
+        <p>4. 配置说明文档：<a href="https://github.com/PeiKeSmart/Pek.USEEPAY/blob/main/Doc/配置说明.md" target="_blank">查看文档</a></p>
+    </div>
+</div>
+
+<script>
+    function createOrder() {
+        fetch('/UseePayTest/CreateOrder', {
+            method: 'GET'
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('resultContent').textContent = JSON.stringify(data, null, 2);
+        })
+        .catch(error => {
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('resultContent').textContent = '错误: ' + error.message;
+        });
+    }
+</script>
