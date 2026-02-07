@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Pek;
 using Pek.NCubeUI.Components;
 
-namespace PekMvc.Components;
+namespace Pek.USEEPAY.Samples.Components;
 
 public partial class NewsRssHeaderLinkViewComponent : PekViewComponent {
     public IViewComponentResult Invoke()

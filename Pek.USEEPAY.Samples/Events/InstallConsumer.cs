@@ -4,7 +4,7 @@ using Pek;
 using Pek.Events;
 using Pek.NCubeUI.Events;
 
-namespace PekMvc.Events;
+namespace Pek.USEEPAY.Samples.Events;
 
 /// <summary>
 /// 菜单消费

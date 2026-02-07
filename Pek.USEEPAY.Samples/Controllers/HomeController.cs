@@ -6,7 +6,7 @@ using NewLife.Cube.ViewModels;
 
 using Pek.NCube.BaseControllers;
 
-namespace PekMvc.Controllers;
+namespace Pek.USEEPAY.Samples.Controllers;
 
 /// <summary>主页面</summary>
 //[AllowAnonymous]

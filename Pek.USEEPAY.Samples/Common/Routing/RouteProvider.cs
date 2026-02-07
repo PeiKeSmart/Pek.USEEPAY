@@ -3,7 +3,7 @@
 using Pek;
 using Pek.NCube.Routing;
 
-namespace PekMvc.Common.Routing;
+namespace Pek.USEEPAY.Samples.Common.Routing;
 
 public class RouteProvider : BaseRouteProvider, IRouteProvider {
     /// <summary>

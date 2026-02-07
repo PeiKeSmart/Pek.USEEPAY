@@ -9,4 +9,4 @@ ENV BasePath /cube
 
 EXPOSE 80
 
-ENTRYPOINT ["dotnet", "PekMvc.dll"]
+ENTRYPOINT ["dotnet", "Pek.USEEPAY.Samples.dll"]

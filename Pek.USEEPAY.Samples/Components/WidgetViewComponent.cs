@@ -7,7 +7,7 @@ using Pek.Infrastructure;
 using Pek.NCubeUI.Components;
 using Pek.NCubeUI.Events;
 
-namespace PekMvc.Components;
+namespace Pek.USEEPAY.Samples.Components;
 
 public partial class WidgetViewComponent : PekViewComponent {
     public async Task<IViewComponentResult> InvokeAsync(String WidgetZone, object? AdditionalData = null)

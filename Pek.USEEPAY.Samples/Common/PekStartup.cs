@@ -6,9 +6,9 @@ using Pek.Infrastructure;
 using Pek.NCubeUI.MVC.Routing;
 using Pek.VirtualFileSystem;
 
-using PekMvc.Common.Routing;
+using Pek.USEEPAY.Samples.Common.Routing;
 
-namespace PekMvc.Common;
+namespace Pek.USEEPAY.Samples.Common;
 
 public partial class PekStartup : IPekStartup {
     /// <summary>

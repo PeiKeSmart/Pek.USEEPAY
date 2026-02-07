@@ -11,7 +11,7 @@ using Pek.NCube.Events;
 using Pek.NCube.Routing;
 using Pek.Webs;
 
-namespace PekMvc.Common.Routing;
+namespace Pek.USEEPAY.Samples.Common.Routing;
 
 /// <summary>
 /// slug路由转换器

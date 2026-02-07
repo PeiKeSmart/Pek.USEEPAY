@@ -8,7 +8,7 @@
     <!--基类。可能包含基类和接口，其中{name}替换为Table.Name-->
     <BaseClass>DHEntityBase</BaseClass>
     <!--命名空间-->
-    <Namespace>PekMvc.Entity</Namespace>
+    <Namespace>Pek.USEEPAY.Samples.Entity</Namespace>
     <!--输出目录-->
     <Output>.\</Output>
     <!--是否使用中文文件名。默认false-->

@@ -2,9 +2,9 @@
 
 using Pek.NCubeUI.Components;
 
-using PekMvc.Common;
+using Pek.USEEPAY.Samples.Common;
 
-namespace PekMvc.Components;
+namespace Pek.USEEPAY.Samples.Components;
 
 public partial class BlogRssHeaderLinkViewComponent : PekViewComponent {
     public IViewComponentResult Invoke()

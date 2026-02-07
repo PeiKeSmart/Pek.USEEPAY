@@ -10,9 +10,9 @@ using Pek.NCube.Routing;
 using Pek.NCubeUI.MVC;
 using Pek.NCubeUI.MVC.Routing;
 
-using PekMvc.Entity;
+using Pek.USEEPAY.Samples.Entity;
 
-namespace PekMvc.Common;
+namespace Pek.USEEPAY.Samples.Common;
 
 /// <summary>
 /// 代表应用程序内部构建特定 URL 的辅助实现

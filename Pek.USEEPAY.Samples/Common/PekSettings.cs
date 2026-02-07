@@ -4,7 +4,7 @@ using System.ComponentModel;
 
 using XCode.Configuration;
 
-namespace PekMvc.Common;
+namespace Pek.USEEPAY.Samples.Common;
 
 /// <summary>HTTP相关默认值设置</summary>
 [DisplayName("HTTP相关默认值设置")]

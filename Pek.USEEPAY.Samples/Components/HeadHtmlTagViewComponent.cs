@@ -2,7 +2,7 @@
 
 using Pek.NCubeUI.Components;
 
-namespace PekMvc.Components;
+namespace Pek.USEEPAY.Samples.Components;
 
 public class HeadHtmlTagViewComponent : PekViewComponent {
     public async Task<IViewComponentResult> InvokeAsync(String WidgetZone, object? AdditionalData = null)

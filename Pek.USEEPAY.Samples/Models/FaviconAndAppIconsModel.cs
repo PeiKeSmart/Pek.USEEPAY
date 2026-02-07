@@ -1,6 +1,6 @@
 ﻿using Pek;
 
-namespace PekMvc.Models;
+namespace Pek.USEEPAY.Samples.Models;
 
 public partial record FaviconAndAppIconsModel : BaseDHModel {
     public String? HeadCode { get; set; }

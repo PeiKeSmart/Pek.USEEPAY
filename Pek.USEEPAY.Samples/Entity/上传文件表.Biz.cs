@@ -24,7 +24,7 @@ using XCode.DataAccessLayer;
 using XCode.Membership;
 using XCode.Shards;
 
-namespace PekMvc.Entity;
+namespace Pek.USEEPAY.Samples.Entity;
 
 public partial class UploadInfo : DHEntityBase<UploadInfo>
 {

@@ -24,7 +24,7 @@ using XCode.DataAccessLayer;
 using XCode.Membership;
 using XCode.Shards;
 
-namespace PekMvc.Entity;
+namespace Pek.USEEPAY.Samples.Entity;
 
 public partial class SingleArticle : DHEntityBase<SingleArticle>
 {

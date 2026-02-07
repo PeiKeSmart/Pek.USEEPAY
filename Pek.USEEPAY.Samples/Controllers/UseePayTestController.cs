@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Pek.NCube.BaseControllers;
 using Pek.UseePay;
 
-namespace PekMvc.Controllers;
+namespace Pek.USEEPAY.Samples.Controllers;
 
 /// <summary>UseePay 支付测试</summary>
 public class UseePayTestController : PekBaseControllerX

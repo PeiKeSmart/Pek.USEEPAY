@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Web.Script.Serialization;
 using System.Xml.Serialization;
 
-namespace PekMvc.Entity;
+namespace Pek.USEEPAY.Samples.Entity;
 
 /// <summary>上传文件表</summary>
 public partial interface IUploadInfo

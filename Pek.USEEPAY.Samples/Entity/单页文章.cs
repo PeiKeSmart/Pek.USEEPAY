@@ -11,7 +11,7 @@ using XCode.Cache;
 using XCode.Configuration;
 using XCode.DataAccessLayer;
 
-namespace PekMvc.Entity;
+namespace Pek.USEEPAY.Samples.Entity;
 
 /// <summary>单页文章</summary>
 [Serializable]

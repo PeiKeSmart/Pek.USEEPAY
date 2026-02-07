@@ -5,9 +5,9 @@ using NewLife;
 using Pek;
 using Pek.NCubeUI.Components;
 
-using PekMvc.Models;
+using Pek.USEEPAY.Samples.Models;
 
-namespace PekMvc.Components;
+namespace Pek.USEEPAY.Samples.Components;
 
 public partial class FaviconViewComponent : PekViewComponent {
     public async Task<IViewComponentResult> InvokeAsync()

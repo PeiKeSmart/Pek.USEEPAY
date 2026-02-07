@@ -3,7 +3,7 @@
 using Pek.Configs;
 using Pek.NCube.Routing;
 
-namespace PekMvc.Common.Routing;
+namespace Pek.USEEPAY.Samples.Common.Routing;
 
 /// <summary>
 /// 代表提供一般路由的供应商

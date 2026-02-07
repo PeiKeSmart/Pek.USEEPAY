@@ -123,6 +123,6 @@ app.UsePekEndpoints(); // 注册 Pek 的路由端点
 
 //app.UseCubeHome();
 
-app.RegisterService("PekMvc", null, builder.Environment.EnvironmentName, "/pek/info");
+app.RegisterService("Pek.USEEPAY.Samples", null, builder.Environment.EnvironmentName, "/pek/info");
 
 app.Run();

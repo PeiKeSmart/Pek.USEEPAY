@@ -7,10 +7,10 @@ using Pek.NCubeUI.Events;
 using Pek.NCubeUI.Models;
 using Pek.NCubeUI.UI;
 
-using PekMvc.Common;
-using PekMvc.Components;
+using Pek.USEEPAY.Samples.Common;
+using Pek.USEEPAY.Samples.Components;
 
-namespace PekMvc.Events;
+namespace Pek.USEEPAY.Samples.Events;
 
 public class EventConsumer :
     IConsumer<ModelPreparedEvent<BaseDHModel>>,

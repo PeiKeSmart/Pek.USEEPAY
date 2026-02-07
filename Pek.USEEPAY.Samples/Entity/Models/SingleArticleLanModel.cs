@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Web.Script.Serialization;
 using System.Xml.Serialization;
 
-namespace PekMvc.Entity;
+namespace Pek.USEEPAY.Samples.Entity;
 
 /// <summary>单页文章翻译</summary>
 public partial class SingleArticleLanModel

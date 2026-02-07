@@ -10,7 +10,7 @@ using System.Xml.Serialization;
 
 using XCode;
 
-namespace PekMvc.Entity;
+namespace Pek.USEEPAY.Samples.Entity;
 
 /// <summary>实体基类</summary>
 /// <typeparam name="TEntity"></typeparam>
